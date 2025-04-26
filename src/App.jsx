@@ -13,7 +13,7 @@ const ComingSoon = () => {
 
   // Typing animation
   const [text, setText] = useState("");
-  const fullText = "Something Extraordinary is Coming...";
+  const fullText = "Coming Soon...";
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
