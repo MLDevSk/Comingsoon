@@ -6,6 +6,7 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/414db81a-f1ac-4d94-ae63-5eab93411a79/deploy-status)](https://app.netlify.com/sites/artfulway/deploys)
 
 ## Expanding the ESLint configuration
 
