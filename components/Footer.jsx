@@ -86,6 +86,9 @@ const Footer = () => {
                 hello@artfulway.in
               </a>
             </div>
+            <div className="mt-4 text-center">
+              <a href="/form.html" className="text-xs text-purple-400 hover:text-purple-300 transition-colors underline">Form</a>
+            </div>
           </motion.div>
         </div>
       </div>
