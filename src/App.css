@@ -1,0 +1,152 @@
+/* Professional, Tech-Driven, Minimalist, AI-Enhanced Dark Theme */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(120deg, #0a0a12 0%, #181a23 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+body {
+  background: #0a0a12;
+  color: #e5e7ef;
+  font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Subtle neural pattern background using SVG */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"><g opacity="0.07"><path d="M0 40 Q50 80 100 40 T200 40 T300 40 T400 40" stroke="%23b6b6e0" stroke-width="2" fill="none"/><circle cx="50" cy="80" r="2" fill="%23b6b6e0"/><circle cx="150" cy="40" r="2" fill="%23b6b6e0"/><circle cx="250" cy="80" r="2" fill="%23b6b6e0"/></g></svg>') repeat;
+  background-size: 400px 120px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: rgba(20, 22, 34, 0.85);
+  border-radius: 1.5em;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(80,80,120,0.08);
+  margin-bottom: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Minimalist button style */
+button, .btn {
+  background: linear-gradient(90deg, #5f5fff 0%, #a259ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.75em;
+  padding: 0.9em 2.2em;
+  font-weight: 600;
+  font-size: 1.1em;
+  box-shadow: 0 2px 12px 0 rgba(80,80,120,0.12);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #a259ff 0%, #5f5fff 100%);
+  box-shadow: 0 4px 24px 0 rgba(80,80,120,0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Depth and motion for cards */
+.animate-in {
+  animation: fadeInUp 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Spark line accent for AI feel */
+.spark-line {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #a259ff 0%, #5f5fff 100%);
+  border-radius: 2px;
+  margin: 0 auto 1.5em auto;
+  opacity: 0.7;
+  box-shadow: 0 0 8px #a259ff44;
+}
+
+/* Flow node accent for AI feel */
+.flow-node {
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, #5f5fff 0%, #a259ff 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 12px #a259ff55;
+  display: inline-block;
+  margin: 0 6px;
+  opacity: 0.8;
+}
+
+/* Minimalist input style */
+input, textarea, select {
+  background: rgba(30, 32, 44, 0.85);
+  color: #e5e7ef;
+  border: 1.5px solid #23243a;
+  border-radius: 0.7em;
+  padding: 0.9em 1.2em;
+  font-size: 1em;
+  margin-bottom: 1em;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  border: 1.5px solid #a259ff;
+  outline: none;
+  box-shadow: 0 0 0 2px #a259ff33;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #181a23;
+}
+::-webkit-scrollbar-thumb {
+  background: #23243a;
+  border-radius: 8px;
+}
